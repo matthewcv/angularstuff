@@ -1,0 +1,12 @@
+﻿
+<div ng-controller="ShellController">
+
+    <ul>
+        <li ng-repeat="state in states"><a ui-sref="{{state.name}}">{{state.text}}</a> </li>
+    </ul>
+
+    <div ui-view>
+
+
+    </div>
+</div>

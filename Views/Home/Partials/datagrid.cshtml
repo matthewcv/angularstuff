@@ -1,0 +1,26 @@
+﻿
+
+<mcv-datagrid items="people">
+
+ count:   {{items.length}}
+
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td><input ng-model="search.name" /></td>
+                <td><input ng-model="search.age" /></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="person in people | filter:search">
+                <td>{{person.name}}</td>
+                <td>{{person.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</mcv-datagrid>
